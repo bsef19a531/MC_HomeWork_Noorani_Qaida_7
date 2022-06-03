@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBFAAE"
+    android:background="@color/primary_cream_color"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/qaidaPageView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -16,6 +16,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
         tools:srcCompat="@drawable/pg2" />
 
     <LinearLayout
@@ -34,7 +35,8 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="50dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="Back Page"
+            app:backgroundTint="@color/primary_parrot_green" />
 
         <Button
             android:id="@+id/button2"
@@ -45,7 +47,8 @@
             android:layout_weight="1"
             android:editable="false"
             android:fadingEdge="horizontal|vertical"
-            android:text="Button"
+            android:text="Next Page"
+            app:backgroundTint="@color/primary_parrot_green"
             app:elevation="10dp" />
     </LinearLayout>
 
