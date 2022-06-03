@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Noorani Qaida</string>
+    <string name="next_pg">Next Page</string>
+    <string name="back_pg">Back Page</string>
+    <string name="qaida_description">Particular Qaida Page</string>
+
 </resources>
