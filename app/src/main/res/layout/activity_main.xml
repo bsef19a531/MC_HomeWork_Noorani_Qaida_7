@@ -7,11 +7,13 @@
     android:background="@color/primary_cream_color"
     tools:context=".MainActivity">
 
+<!--    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView-->
     <ImageView
         android:id="@+id/qaidaPageView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:contentDescription="@string/qaida_description"
+        android:foregroundGravity="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,50 +23,56 @@
         tools:ignore="ImageContrastCheck"
         tools:srcCompat="@drawable/pg2" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/primary_cream_color"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+<!--    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView-->
+<!--        android:layout_width="200dp"-->
+<!--    android:layout_height="200dp"-->
+    <!--        app:src="@drawable/pg2"-->
+<!--        />-->
 
-        <Button
-            android:id="@+id/backBtn"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="50dp"
-            android:layout_weight="1"
-            android:text="@string/back_pg"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/primary_parrot_green"
-            app:elevation="10dp"
-            app:icon="@android:drawable/ic_media_rew"
-            app:iconGravity="start"
-            app:iconTint="@color/black"
-            app:strokeColor="#FFFFFF" />
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_cream_color"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            android:id="@+id/nextBtn"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:fadingEdge="horizontal|vertical"
-            android:text="@string/next_pg"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/primary_parrot_green"
-            app:elevation="10dp"
-            app:icon="@android:drawable/ic_media_ff"
-            app:iconGravity="end"
-            app:iconTint="@color/black" />
+                <Button
+                    android:id="@+id/backBtn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_weight="1"
+                    android:text="@string/back_pg"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/primary_parrot_green"
+                    app:elevation="10dp"
+                    app:icon="@android:drawable/ic_media_rew"
+                    app:iconGravity="start"
+                    app:iconTint="@color/black"
+                    app:strokeColor="#FFFFFF" />
 
-    </LinearLayout>
+                <Button
+                    android:id="@+id/nextBtn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:fadingEdge="horizontal|vertical"
+                    android:text="@string/next_pg"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/primary_parrot_green"
+                    app:elevation="10dp"
+                    app:icon="@android:drawable/ic_media_ff"
+                    app:iconGravity="end"
+                    app:iconTint="@color/black" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
