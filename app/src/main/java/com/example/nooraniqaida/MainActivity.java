@@ -2,8 +2,12 @@ package com.example.nooraniqaida;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -22,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         pageNo = 1;
     }
 
-    private final int [] qaidaPages = {R.drawable.pg1, R.drawable.pg2, R.drawable.pg3, R.drawable.pg4, R.drawable.pg5,
+    private final int [] qaidaPages = { R.drawable.makharij, R.drawable.pg2, R.drawable.pg3, R.drawable.pg4, R.drawable.pg5,
             R.drawable.pg6, R.drawable.pg7, R.drawable.pg8, R.drawable.pg9, R.drawable.pg10,
             R.drawable.pg11, R.drawable.pg12, R.drawable.pg13, R.drawable.pg14, R.drawable.pg15,
             R.drawable.pg16, R.drawable.pg17, R.drawable.pg18, R.drawable.pg19, R.drawable.pg20,
@@ -34,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         nextBtn = findViewById(R.id.nextBtn);
         backBtn = findViewById(R.id.backBtn);
