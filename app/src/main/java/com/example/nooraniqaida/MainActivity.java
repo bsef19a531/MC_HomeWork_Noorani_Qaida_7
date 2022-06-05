@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Hide Status Bar from the Application
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         nextBtn = findViewById(R.id.nextBtn);
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(pageNo >= 0 && pageNo < 32)
+                if(pageNo >= 0 && pageNo < qaidaPages.length)
                 {
                     pageNo++;
                     mainImgView.setImageResource(qaidaPages[pageNo]);
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(pageNo >= 0 && pageNo < 32)
+                if(pageNo >= 0 && pageNo < qaidaPages.length)
                 {
                     pageNo--;
                     mainImgView.setImageResource(qaidaPages[pageNo]);
