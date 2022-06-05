@@ -7,7 +7,6 @@
     android:background="@color/primary_cream_color"
     tools:context=".MainActivity">
 
-<!--    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView-->
     <ImageView
         android:id="@+id/qaidaPageView"
         android:layout_width="wrap_content"
@@ -28,6 +27,25 @@
 <!--    android:layout_height="200dp"-->
     <!--        app:src="@drawable/pg2"-->
 <!--        />-->
+
+<!--    <com.jsibbold.zoomage.ZoomageView-->
+<!--        android:id="@+id/qaidaPageView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:src="@drawable/pg2"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/linearLayout"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:zoomage_animateOnReset="true"-->
+<!--        app:zoomage_autoCenter="true"-->
+<!--        app:zoomage_autoResetMode="UNDER"-->
+<!--        app:zoomage_maxScale="8"-->
+<!--        app:zoomage_minScale="0.6"-->
+<!--        app:zoomage_restrictBounds="false"-->
+<!--        app:zoomage_translatable="true"-->
+<!--        app:zoomage_zoomable="true"-->
+<!--        tools:ignore="ImageContrastCheck" />-->
 
             <LinearLayout
                 android:id="@+id/linearLayout"

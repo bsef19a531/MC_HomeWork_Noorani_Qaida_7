@@ -2,14 +2,16 @@ package com.example.nooraniqaida;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
-import android.os.Build;
+//import android.app.ActionBar;
+//import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
+//import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+
+//import com.jsibbold.zoomage.ZoomageView;
 
 //import com.davemorrissey.labs.subscaleview.ImageSource;
 //import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
@@ -17,7 +19,9 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
 //    SubsamplingScaleImageView mainImgView;
+//    ZoomageView mainImgView;
     ImageView mainImgView;
+
     Button nextBtn;
     Button backBtn;
     static short pageNo;
@@ -25,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     static {
         pageNo = 1;
     }
+
 
     private final int [] qaidaPages = { R.drawable.makharij, R.drawable.pg2, R.drawable.pg3, R.drawable.pg4, R.drawable.pg5,
             R.drawable.pg6, R.drawable.pg7, R.drawable.pg8, R.drawable.pg9, R.drawable.pg10,
@@ -46,32 +51,27 @@ public class MainActivity extends AppCompatActivity {
         mainImgView = findViewById(R.id.qaidaPageView);
 //        mainImgView = (SubsamplingScaleImageView) findViewById(R.id.qaidaPageView);
 
-        mainImgView.setImageResource(R.drawable.pg2);
+
+          mainImgView.setImageResource(R.drawable.pg2);
 //        mainImgView.setImage(ImageSource.resource(R.drawable.pg2));
 
-        nextBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        nextBtn.setOnClickListener(view -> {
 
-                if(pageNo >= 0 && pageNo < qaidaPages.length)
-                {
-                    pageNo++;
-                    mainImgView.setImageResource(qaidaPages[pageNo]);
+            if(pageNo >= 0 && pageNo < qaidaPages.length)
+            {
+                pageNo++;
+                mainImgView.setImageResource(qaidaPages[pageNo]);
 //                    mainImgView.setImage(ImageSource.resource(qaidaPages[pageNo]));
-                }
             }
         });
 
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        backBtn.setOnClickListener(view -> {
 
-                if(pageNo >= 0 && pageNo < qaidaPages.length)
-                {
-                    pageNo--;
-                    mainImgView.setImageResource(qaidaPages[pageNo]);
+            if(pageNo >= 0 && pageNo < qaidaPages.length)
+            {
+                pageNo--;
+                mainImgView.setImageResource(qaidaPages[pageNo]);
 //                    mainImgView.setImage(ImageSource.resource(qaidaPages[pageNo]));
-                }
             }
         });
 
